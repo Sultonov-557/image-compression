@@ -1,8 +1,8 @@
 const Canvas = require("canvas");
 const fs = require("fs");
 
-const smaller = 1;
-const colorLimit = 256;
+const smaller = 1; //how much image resolution will be compressed
+const colorLimit = 10; //how color range will be limited
 
 async function start() {
 	const img = await simplefy(await imageToArray("./in.png"));
